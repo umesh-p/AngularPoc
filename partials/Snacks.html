@@ -1,0 +1,84 @@
+
+
+<div ng-controller="SnacksController">	
+	<div class="Header">
+			<div class="LogoDiv" ng-click="changeUrl('')"></div>
+			<div class="HeadMenu">My account</div>
+			<div class="HeadMenu"><span id="smallIconDivItems"></span> Items</div>
+			<div class="HeadMenu"><span id="smallIconDivContacts"></span>Contact</div>
+			<div class="HeadMenu">How it works</div>
+			<div class="HeadMenuImg" ng-click="toggleMenu(margin)"></div>
+	</div>	
+	<div class="allMenu">
+			<div class="menuItems" ng-click="changeUrl('Fruits')">Single Fruit</div>
+			<div class="menuItems" ng-click="changeUrl('MixedFruit')">Mixed Fruit</div>
+			<div class="menuItems" ng-click="changeUrl('Sprout')">Sprout</div>
+			<div class="menuItems" ng-click="changeUrl('MixedSalad')">Mixed Salad</div>
+			<div class="menuItems" ng-click="changeUrl('Snacks')">Snacks</div>
+			<div class="menuItems" ng-click="changeUrl('FruitsSalads')">Fruits & Salads</div>
+			<div class="menuItems" ng-click="changeUrl('Lounch')">Lounch in 30 minutes</div>
+	</div>
+	<div id="leftMenu" style="left:-{{margin}}px">
+			<div class="menuItemsLeft">My account</div>
+			<div class="menuItemsLeft"><span id="smallIconDivItems"></span> Items</div>
+			<div class="menuItemsLeft"><span id="smallIconDivContacts"></span>Contact</div>
+			<div class="menuItemsLeft">How it works</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('Fruits')">Single Fruit</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('MixedFruit')">Mixed Fruit</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('Sprout')">Sprout</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('MixedSalad')">Mixed Salad</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('Snacks')">Snacks</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('FruitsSalads')">Fruits & Salads</div>
+			<div class="menuItemsLeft" ng-click="changeUrl('Lounch')">Lounch in 30 minutes</div>	
+	</div>
+		<div class="subscriptionHead">Select the dishes you like</div>
+	<div class="subscriptionMsg">We will deliver one of them everyday</div>
+	
+<div class="parentInfoDiv1">
+	<div class="outerContainer">
+		<div id="container">
+		  <div id="image"><span>&#8377 40</span></div>
+		  <div id="comments">
+		   Apple
+		  </div>
+		  <div id="separator"></div>
+		  <div class="dataDiv">Delicious and crunchy, apple fruit is one of the most popular and favorite fruits among the health conscious and fitness lovers.</div>
+		  <div id="stuff">
+			<div class="buttons">Like It</div>
+			<div class="buttons">Don't Like It</div>
+		  </div>
+		</div>
+		<div id="container">
+		  <div id="image"><span>&#8377 70</span></div>
+		  <div id="comments">
+		   Apple
+		  </div>
+		  <div id="separator"></div>
+		  <div class="dataDiv">Delicious and crunchy, apple fruit is one of the most popular and favorite fruits among the health conscious and fitness lovers.</div>
+		  <div id="stuff">
+			<div class="buttons">Like It</div>
+			<div class="buttons">Don't Like It</div>
+		  </div>
+		</div>
+		<div id="container">
+		  <div id="image"><span>&#8377 70</span></div>
+		  <div id="comments">
+		   Pine Apple
+		  </div>
+		  <div id="separator"></div>
+		  <div class="dataDiv">Delicious and crunchy, apple fruit is one of the most popular and favorite fruits among the health conscious and fitness lovers.</div>
+		  <div id="stuff">
+			<div class="buttons">Like It</div>
+			<div class="buttons">Don't Like It</div>
+		  </div>
+		</div>
+	</div>	
+</div>
+<div class="Footer">
+		<div class="footerIcons" id="facebookIcon"></div>
+		<div class="footerIcons" id="googleIcon"></div>
+		<div class="footerIcons" id="twitterIcon"></div>
+		<div class="footerIcons" id="youtubeIcon"></div>
+	</div>
+
+</div>

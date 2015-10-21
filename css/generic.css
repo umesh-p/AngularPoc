@@ -1,0 +1,107 @@
+/*
+http://codepen.io/loredonut/pen/qenAD*/
+/* generic css */
+.view {
+	display:inline-block;
+	width: 350px;
+	margin-top:20px;
+    height: 250px;
+    border: 10px solid #fff;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    cursor: default;
+	
+}
+.view .mask, .view .content {
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+.view img {
+    display: block;
+    position: relative;
+	background-size:350px 250px;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 19px;
+    font-family: Raleway, serif;
+    padding-top: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 50px 0 0 0;
+}
+.view p {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    font-family: Raleway, serif;
+    padding:5px 0 10px 0px;
+    background: rgba(0, 0, 0, 0.6);
+}
+.view a.info {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 14px;
+    background: #000;
+    color: #fff;
+    font-family: Raleway, serif;
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+}
+.view a.info:hover {
+    box-shadow: 0 0 5px #000
+}
+.view-first img {
+	transition: all 0.2s linear;
+	width: 350px;
+	height: 250px;
+}
+.view-first .mask {
+    opacity: 0;
+    background-color: rgba(155, 91, 52, 0.7);
+    transition: all 0.4s ease-in-out;
+    
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    font-family: Raleway, serif;
+    transition: all 0.2s ease-in-out;
+}
+.view-first p { 
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+.view-first a.info{
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+
+.view-first:hover img { 
+    transform: scale(1.1);
+} 
+.view-first:hover .mask { 
+    opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view-first:hover p {
+    transition-delay: 0.1s;
+}
+
+
